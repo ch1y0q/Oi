@@ -15,9 +15,9 @@ int main()
     int k[l1];
     int j[l2];
     for(int i=0;i<l1;i++)
-        k[i]=s1[i]-48;
+        k[i]=s1[l1-1-i]-48;
     for(int i=0;i<l2;i++)
-        j[i]=s2[i]-48;
+        j[i]=s2[l2-1-i]-48;
     
     for()
 
