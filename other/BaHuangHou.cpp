@@ -3,25 +3,14 @@
 
 using namespace std;
 
-bool a[8][8];
-bool hang(int x;int y);
-bool lie(int x,int y);
-bool xie(int x,int y);
+bool row[8]={0};
+bool cross1[15]={0};
+bool cross2[15]={0};
+bool pos[8]={0};
+int sum=0;
+void dfs(int i);
 
 int main()
-{
-
-}
-
-bool hang(int x;int y)
-{
-    
-}
-bool lie(int x,int y)
-{
-
-}
-bool xie(int x,int y)
 {
 
 }
