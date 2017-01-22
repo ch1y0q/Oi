@@ -1,7 +1,7 @@
 # OI课文件
 **做题文件备份**  
 *来自老年NOIP玩家。*  
-欢迎访问个人网站：[LHLIT](lhlit.eu.org)  
+欢迎访问个人网站：[LHLIT](https://lhlit.eu.org)  
 
 > Just for fun.  
   
