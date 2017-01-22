@@ -1,4 +1,5 @@
 #include <cstdio>
+#include <vector>
 
 using namespace std;
 
@@ -25,5 +26,10 @@ void find_title()
 {
     char title_begian[]="<title>";
     char title_end[]="</title>";
-    
+    vector<char> art;
+    art.clear();
+    while()
+    {
+        
+    }
 }
