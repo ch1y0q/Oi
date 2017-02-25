@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1486521264 source:c:\users\administrator\desktop\oi\usaco1.2 milking cows\main.cpp
+	<iostream>
+	<vector>
+	<set>
+	<cstdio>
+

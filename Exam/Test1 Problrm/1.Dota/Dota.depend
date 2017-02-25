@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1486553803 source:c:\users\administrator\desktop\oi\dota\main.cpp
+	<iostream>
+	<cstdio>
+	<cstring>
+
