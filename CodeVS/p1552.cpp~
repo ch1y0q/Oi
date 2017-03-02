@@ -16,7 +16,7 @@ int main()
     word words[m];
     for(int i=0;i<m;i++)
     {
-        cin>>words
+        cin>>words[i].dc>>words[i].num;
     }
     
 }
