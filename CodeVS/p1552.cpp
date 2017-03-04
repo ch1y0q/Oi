@@ -6,7 +6,7 @@ using namespace std;
 struct word
 {
     string dc;
-    int num;
+    int num£»
 };
 
 int main()
