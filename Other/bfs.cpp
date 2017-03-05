@@ -35,7 +35,8 @@ void bfs(int start)
             if(bmp[v][i]==1)
                 if(visited[i]==0)
                 {
-
+                    deq[tail++]=i;s
+                    visited[i]=1;
                 }
         }
     }
@@ -44,34 +45,38 @@ void bfs(int start)
 
 /*
 #include <iostream>
-#include <stdio.h>
+#include <cstdio>
+
 using namespace std;
+
 int matrix[6][6];
-void bfs(int start){
- int queue[6]={0};
- int visited[6]={0};
- int head=0;
- int tail=0;
 
- //入队
- queue[tail++]=start;
- visited[start]=1;
+void bfs(int start)
+{
+    int queue[6]={0};
+    int visited[6]={0};
+    int head=0;
+    int tail=0;
 
- while(head!=tail){
-    int v=queue[head++];
-    cout<<v+1<<endl;
-    for(int i=0;i<6;i++){
-    if(matrix[v][i]==1){
-            if(visited[i]==0){
-                queue[tail++]=i;
-                visited[i]=1;
+    //入队
+    queue[tail++]=start;
+    visited[start]=1;
+
+    while(head!=tail)
+    {
+        int v=queue[head++];
+        cout<<v+1<<endl;
+        for(int i=0;i<6;i++)
+            if(matrix[v][i]==1)
+            {
+                if(visited[i]==0)
+                {
+                    queue[tail++]=i;
+                    visited[i]=1;
+                }
+
             }
-
     }
-    }
- }
-
-
 }
 int main()
 {
