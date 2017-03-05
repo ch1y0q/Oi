@@ -4,17 +4,19 @@
 
 using namespace std;
 
-void bfsint(int cur);
+void bfs(int start);
 
 int bmp[Maxn][Maxn];
 
 int main()
 {
-    freopen("../data.in","r",stdin);
-    freopen("../data.out","w",stdout);
+    freopen("data.in","r",stdin);
+    freopen("data.out","w",stdout);
     for(int i=0;i<Maxn;i++)
         for(int j=0;j<Maxn;j++)
         cin>>bmp[i][j];
+    bfs(0);
+    return 0;
 }
 
 void bfs(int start)
@@ -35,7 +37,7 @@ void bfs(int start)
             if(bmp[v][i]==1)
                 if(visited[i]==0)
                 {
-                    deq[tail++]=i;s
+                    deq[tail++]=i;
                     visited[i]=1;
                 }
         }
