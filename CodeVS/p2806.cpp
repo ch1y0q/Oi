@@ -22,10 +22,7 @@ int main()
         for(int i=0;i<m;i++)
             for(int j=0;j<n;j++)
                 if(pic[i][j]=='@')
-                {
-                    cout<<"老子DFS了"<<endl;
                     dfs(i,j);
-                }
         cout<<cnt<<endl;
     }
     return 0;
@@ -33,8 +30,11 @@ int main()
 
 void dfs(int i,int j)
 {
-    if(i<0 || j<0 || i>=n || j>=m || idx[i][j] || pic[i][j]=='#')
+    if(idx[i][j] || pic[i][j]=='#')
         return;
+    if(i<0 || j<0 || i>=m || j>=n)
+        return;
+    idx[i][j]=++cnt;
     dfs(i-1,j);
     dfs(i+1,j);
     dfs(i,j-1);
