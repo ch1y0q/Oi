@@ -1,5 +1,4 @@
-#include <cstdio>
-#include <iostream>
+#include <bits/stdc++.h>
 #include <cstring>
 
 #define INF 2147483647 //最大int
@@ -22,7 +21,9 @@ int main()
         nmax=max(nmax,dp[i]);
     }
     cout<<nmax<<" ";
-    memset(dp,0,dp+30);
-    for(int i=1;i<n;i++)
+    memset(dp,0,sizeof(dp));
+    dp[flag]=dd[0];
+    for(int i=0;i<n;i++)
+
     return 0;
 }
